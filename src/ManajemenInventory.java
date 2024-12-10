@@ -19,6 +19,8 @@ public class ManajemenInventory {
             System.out.println("4. Keluar");
             System.out.print("Pilihan menu: ");
             int pilihan = input.nextInt();
+            input.nextLine();
+
             switch (pilihan) {
                 case 1:
                     viewData();
@@ -38,7 +40,7 @@ public class ManajemenInventory {
     }
 
     static void viewData() {
-
+       
     }
 
     static void addStock() {
@@ -46,6 +48,14 @@ public class ManajemenInventory {
     }
 
     static void newData(String[][] menu, int[] stok) {
+        System.out.println("===== TAMBAH ITEM BARU =====");
+        System.out.print("Masukkan nama item baru: ");
+        String menuBaru = input.nextLine();
+        System.out.print("Masukkan kategori item baru: ");
+        String kategoriBaru = input.nextLine();
+        System.out.print("Masukkan jumlah stok awal: ");
+        int stokBaru = input.nextInt();
+        System.out.printf("Item baru berhasil ditambahkan: %s (%s) - Stok: %d", menuBaru, kategoriBaru, stokBaru);
         
     }
 }
