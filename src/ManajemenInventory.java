@@ -23,7 +23,7 @@ public class ManajemenInventory {
 
             switch (pilihan) {
                 case 1:
-                    viewData();
+                    viewData(menu, stok);
                     break;
                 case 2:
                     addStock(menu, stok);
@@ -39,8 +39,14 @@ public class ManajemenInventory {
         }
     }
 
-    static void viewData() {
-       
+    static void viewData(String[][] menu, int[] stok) {
+        System.out.println("===== DATA INVENTORI =====");
+        System.out.printf("%-5s %-15s %-15s %-15s", "No", "Nama Item", "Kategori", "Stok");
+        System.out.println("\n---------------------------------------------------------------------------");
+        for (int i = 0; i < menu.length; i++) {
+                System.out.printf("%-5d %-15s %-15s %-15d", (i+1), (menu[i][0]), (menu[i][1]), (stok[i]));
+               
+        }        
     }
 
     static void addStock(String[][] menu, int[] stok) {
