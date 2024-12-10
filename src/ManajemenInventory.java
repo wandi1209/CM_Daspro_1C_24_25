@@ -8,6 +8,9 @@ public class ManajemenInventory {
     }
 
     static void menu() {
+        String[][] menu = new String[10][2];
+        int[] stok = new int[10];
+
         while (true) {
             System.out.println("===== MENU INVENTORI KAFE =====");
             System.out.println("1. Tampilkan Inventory");
@@ -24,7 +27,7 @@ public class ManajemenInventory {
                     addStock();
                     break;
                 case 3:
-                    newData();
+                    newData(menu,stok);
                     break;
                 case 4:
                     System.exit(0);
@@ -42,7 +45,7 @@ public class ManajemenInventory {
 
     }
 
-    static void newData() {
-
+    static void newData(String[][] menu, int[] stok) {
+        
     }
 }
