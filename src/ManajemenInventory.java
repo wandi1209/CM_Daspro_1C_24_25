@@ -16,14 +16,20 @@ public class ManajemenInventory {
             System.out.println("4. Keluar");
             System.out.print("Pilihan menu: ");
             int pilihan = input.nextInt();
-            if (pilihan == 1) {
-                viewData();
-            } else if (pilihan == 2) {
-                addStock();
-            } else if (pilihan == 3) {
-                newData();
-            } else if (pilihan == 4) {
-                System.exit(0);
+            switch (pilihan) {
+                case 1:
+                    viewData();
+                    break;
+                case 2:
+                    addStock();
+                    break;
+                case 3:
+                    newData();
+                    break;
+                case 4:
+                    System.exit(0);
+                default:
+                    break;
             }
         }
     }
