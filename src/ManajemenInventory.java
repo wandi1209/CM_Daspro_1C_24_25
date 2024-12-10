@@ -73,7 +73,8 @@ public class ManajemenInventory {
         String kategoriBaru = input.nextLine();
         System.out.print("Masukkan jumlah stok awal: ");
         int stokBaru = input.nextInt();
-        System.out.printf("Item baru berhasil ditambahkan: %s (%s) - Stok: %d", menuBaru, kategoriBaru, stokBaru);
+        System.out.printf("Item baru berhasil ditambahkan: %s (%s) - Stok: %d\n", menuBaru, kategoriBaru, stokBaru);
         
+        viewData(menu, stok);
     }
 }
